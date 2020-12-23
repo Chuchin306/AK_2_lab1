@@ -1,0 +1,47 @@
+From fd2c88211fe02e2918d22da8a49678fe6f13c4c5 Mon Sep 17 00:00:00 2001
+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Date: Thu, 15 Nov 2018 15:26:35 +0200
+Subject: [PATCH 7/7] current change
+
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Signed-off-by: chuchin306 <chuchin0306@gmai.com>
+---
+ calculator.cpp | 3 ++-
+ calculator.h   | 6 +++---
+ 2 files changed, 5 insertions(+), 4 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index d93e35b..7c9bb8d 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -4,8 +4,9 @@ int Calculator::Add (double a, double b)
+ {
+ 	return a + b + 0.5;
+ }
++	
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.h b/calculator.h
+index 3740907..d59d596 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -3,9 +3,9 @@
+ 
+ class Calculator
+ {
+-    public:
+-        int Add (double, double);
+-        int Sub (double, double);
++	public:
++		int Add (double, double);
++		int Sub (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.29.2.windows.3
+
